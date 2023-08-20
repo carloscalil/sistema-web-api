@@ -57,8 +57,8 @@ namespace SistemaWebAPI.Controllers
         {
             try
             {
-                if (medico.Nome.Trim() == "" || medico.CRM.Trim() == "")
-                    return BadRequest("Nome e/ou CRM do médico não podem ser vazios.");
+                if (!ModelState.IsValid)
+                    return BadRequest(ModelState);
 
                 repository.add(medico);
 
@@ -82,9 +82,10 @@ namespace SistemaWebAPI.Controllers
             try
             {
                 if (id != medico.Codigo)
-                    return BadRequest("Código enviado no parâmetro é diferente do código do paciente.");
-                if (medico.Nome == "" || medico.CRM == "")
-                    return BadRequest("Nome e/ou CRM do médico não podem ser vazios.");
+                    ModelState.AddModelError("Código","Código enviado no parâmetro é diferente do código do médico.");
+
+                if (!ModelState.IsValid)
+                    return BadRequest(ModelState);
 
                 int linhasAfetadas = repository.update(id, medico);
 

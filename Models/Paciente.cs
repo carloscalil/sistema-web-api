@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+using System.ComponentModel.DataAnnotations;
+
 
 namespace Models
 {
@@ -9,8 +8,12 @@ namespace Models
     {
         public int Codigo { get; set; }
 
+        [Required(AllowEmptyStrings = false, ErrorMessage = "Nome obrigatório.")]
+        [StringLength(200, ErrorMessage = "Nome não pode conter mais de 200 caracteres.")]
         public string Nome { get; set; }
 
+        [Required(AllowEmptyStrings = false, ErrorMessage = "Email obrigatório.")]
+        [StringLength(100, ErrorMessage = "Email não pode conter mais de 100 caracteres.")]
         public string Email { get; set; }
 
         public Paciente() {

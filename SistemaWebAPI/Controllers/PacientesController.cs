@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
-using System.Data.SqlClient;
-using System.Net.Sockets;
-using System.IO;
+
 
 
 namespace SistemaWebAPI.Controllers
@@ -70,10 +64,11 @@ namespace SistemaWebAPI.Controllers
         public IHttpActionResult Post(Models.Paciente paciente)
         {
             try {
-                if (paciente.Nome == "" || paciente.Email == "")
-                    return BadRequest("Nome e/ou Email do paciente não podem ser vazios.");
+                if (!ModelState.IsValid)
+                    return BadRequest(ModelState);
 
                 repository.add(paciente);
+
                 return Ok(paciente);
             }
             catch (Exception ex) 
@@ -94,9 +89,11 @@ namespace SistemaWebAPI.Controllers
         {
             try {
                 if (id != paciente.Codigo)
-                    return BadRequest("Código enviado no parâmetro é diferente do código do paciente.");
-                if (paciente.Nome.Trim() == "" || paciente.Email.Trim() == "")
-                    return BadRequest("Nome e/ou Email do paciente não podem ser vazios.");
+                    ModelState.AddModelError("Código","Código enviado no parâmetro é diferente do código do paciente.");                
+
+                if (!ModelState.IsValid)
+                    return BadRequest(ModelState);
+
 
                 int linhasAfetadas = repository.update(id, paciente);
                 if (linhasAfetadas == 0)
