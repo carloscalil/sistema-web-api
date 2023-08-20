@@ -1,0 +1,12 @@
+
+------
+Data:19-08-2023 15:17:56 
+ Mensagem: A consulta parametrizada '(@codigo int,@nome varchar(11),@email varchar(8000))insert into ' espera o parâmetro '@email', que não foi fornecido.
+
+------
+Data:19-08-2023 16:17:53 
+ Mensagem: Referência de objeto não definida para uma instância de um objeto.
+
+------
+Data:19-08-2023 16:34:02 
+ Mensagem: Falha da instância.

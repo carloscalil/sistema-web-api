@@ -1,0 +1,9 @@
+C:\Users\calil\OneDrive\Área de Trabalho\Projetos\SistemaWebAPI\Repositories\bin\Debug\Repositories.dll
+C:\Users\calil\OneDrive\Área de Trabalho\Projetos\SistemaWebAPI\Repositories\bin\Debug\Repositories.pdb
+C:\Users\calil\OneDrive\Área de Trabalho\Projetos\SistemaWebAPI\Repositories\bin\Debug\Models.dll
+C:\Users\calil\OneDrive\Área de Trabalho\Projetos\SistemaWebAPI\Repositories\bin\Debug\Models.pdb
+C:\Users\calil\OneDrive\Área de Trabalho\Projetos\SistemaWebAPI\Repositories\obj\Debug\Repositories.csproj.AssemblyReference.cache
+C:\Users\calil\OneDrive\Área de Trabalho\Projetos\SistemaWebAPI\Repositories\obj\Debug\Repositories.csproj.CoreCompileInputs.cache
+C:\Users\calil\OneDrive\Área de Trabalho\Projetos\SistemaWebAPI\Repositories\obj\Debug\Repositories.csproj.CopyComplete
+C:\Users\calil\OneDrive\Área de Trabalho\Projetos\SistemaWebAPI\Repositories\obj\Debug\Repositories.dll
+C:\Users\calil\OneDrive\Área de Trabalho\Projetos\SistemaWebAPI\Repositories\obj\Debug\Repositories.pdb

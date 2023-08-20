@@ -1,0 +1,6 @@
+C:\Users\calil\OneDrive\Área de Trabalho\Projetos\SistemaWebAPI\Logger\bin\Debug\Logger.dll
+C:\Users\calil\OneDrive\Área de Trabalho\Projetos\SistemaWebAPI\Logger\bin\Debug\Logger.pdb
+C:\Users\calil\OneDrive\Área de Trabalho\Projetos\SistemaWebAPI\Logger\obj\Debug\Logger.csproj.AssemblyReference.cache
+C:\Users\calil\OneDrive\Área de Trabalho\Projetos\SistemaWebAPI\Logger\obj\Debug\Logger.csproj.CoreCompileInputs.cache
+C:\Users\calil\OneDrive\Área de Trabalho\Projetos\SistemaWebAPI\Logger\obj\Debug\Logger.dll
+C:\Users\calil\OneDrive\Área de Trabalho\Projetos\SistemaWebAPI\Logger\obj\Debug\Logger.pdb
